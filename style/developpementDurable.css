@@ -1,0 +1,77 @@
+* {
+	margin: 0px ;
+	padding: 0px ;   
+}
+p {
+    font-family: Lato;
+}
+
+main p {
+    font-size: 16px;
+    color: #4b4b4B;
+}
+
+/* MENU DE LA PAGE */
+
+.menuDeveloppementDurable,
+.menuSomerset{
+    background-color: #ceab81;
+}
+
+
+/* MAIN DISTILLERIE */
+
+h1 {
+    color: #BC8B4F;
+    font-size: 26px;
+    margin: 24px 0 24px 24px;
+    font-family: Lato;
+}
+
+h2 {
+    margin: 24px 0 12px 24px;
+    color: #BC8B4F;
+    font-size: 20px;
+    font-family: Lato;
+}
+
+main {
+    width: 960px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragraphe,
+ {
+    width: 960px;
+    display: inline-block;
+}
+.imageEtTexte p {
+    margin: 0 24px 24px 24px;
+}
+
+/* Pour tablette >= 480 px et <= 960 px */
+
+@media screen and (max-width:960px){
+    main {
+        width: 100%;
+    }
+    .paragraphe {
+    width: 91%;
+    display: inline-block;
+    margin: 24px 24px;
+    text-align: left;
+    }
+}
+
+/* Pour mobile <= 480 px */
+
+@media screen and (max-width:480px){
+    .paragraphe {
+    width: 81%;
+    display: inline-block;
+    margin: 24px 24px;
+    text-align: left;
+    }
+}

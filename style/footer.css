@@ -1,0 +1,118 @@
+/* FOOTER */
+
+/* Sur Footer (au-dessus du fond marron)*/
+
+.footerWrapper {
+    margin-top: 48px;
+    width: 100%;
+    background-color: #ceab81;
+    text-align: center;
+}
+.footerImages,
+.footerTextes {
+    width: 960px;
+    display: inline-block;
+    text-align: center;
+}
+.footerImages div,
+.footerTextes div{
+    width: 310px;
+    display: inline-block;  
+}
+.footerImages div {
+    margin-top: 24px;
+}
+.footerTextes div {
+    margin-bottom: 24px;
+}
+.footerTextes p {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footerWrapper a,
+.footerWrapper :hover a{
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+/* Pour tablette et mobile <= 960 px */
+
+@media screen and (max-width:960px){
+    .footerImages,
+    .footerTextes {
+        width: 100%;
+    }
+    .footerTextes div{
+        width: 100%;
+    }
+    .footerImages div {
+        display: none;
+    }
+    .footerTextes div {
+        margin-bottom: 6px;
+        margin-top: 6px;
+    }
+    .footerImages div {
+    margin-top: 0px;
+    }
+    .lastTexte p {
+        margin-bottom: 18px;
+    }
+}
+
+/* Sous Footer (sur le fond marron) */
+
+.sousFooter {
+    background-color: #BC8B4F;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.sousFooter {
+    padding: 24px 0;
+    color: white;
+}
+
+.sousFooter {
+   text-decoration: none ;
+	color: white ;
+	font-weight: normal ;
+}
+
+.sousFooter img {
+    padding: 0 12px 0 12px;
+}
+.sousFooter a,
+.sousFooter :hover a {
+    text-decoration: none ;
+	color: white ;
+	font-weight: normal ;
+}
+.pgi2 {
+    display: none;
+}
+.facebook img{
+    margin: 0 0 0 140px;
+}
+.twitter img{
+    margin: 0 290px 0 0;
+}
+
+@media screen and (max-width:960px){
+    .pgi2 {
+        display: block;
+    }
+    .pgi1 {
+        display: none;       
+    }
+    .facebook img{
+        margin: 0 0 0 0;
+    }
+    .twitter img{
+        margin: 0 0 0 0;
+    }
+    .sousFooter img {
+        padding: 24px 12px 0 12px;
+    }
+}

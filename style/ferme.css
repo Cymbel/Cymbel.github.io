@@ -1,0 +1,244 @@
+* {
+	margin: 0px ;
+	padding: 0px ;
+}
+p {
+    font-family: Lato;
+}
+
+main p {
+    font-size: 16px;
+}
+
+/* MENU DE LA PAGE */
+
+.menuFerme {
+    background-color: #ceab81;
+}
+
+/* MAIN FERME */
+
+h1 {
+    color: #BC8B4F;
+    font-size: 26px;
+    margin: 24px 0 24px 24px;
+    font-family: Lato;
+}
+
+h2 {
+    margin: 24px 0 12px 0;
+    color: #BC8B4F;
+    font-size: 20px;
+    font-family: Lato;
+}
+
+.entete {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.entete p {
+    margin: 24px;
+}
+
+.main {
+    width: 960px;
+}
+.deuxCol {
+    width: 960px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deuxPar {
+    display: inline-block;
+    width: 429px;
+    vertical-align: top;
+    margin: auto 24px;
+}
+
+.deuxPar p {
+    margin-bottom: 24px;
+}
+.image {
+    background-size: cover;
+    width: 478px;
+    height: 250px;
+    display: inline-block;
+    }
+.image img {
+    display: none;
+}
+
+
+/* Pour tablette >= 480 px et <= 960 px */
+
+@media screen and (max-width:960px){
+    .deuxCol {
+        width: 100%;
+    }
+   .image {
+        width: 100%;
+    }
+    .deuxPar {
+        width: 90%;
+        min-width: 244px;
+    }
+    .entete {
+        width: 100%;
+    }
+}
+
+/* Pour mobile <= 480 px */
+
+@media screen and (max-width:480px){
+    .deuxCol {
+        width: 100%;
+    }
+   .image {
+        width: 100%;
+    }
+    .deuxPar {
+        width: 81%;
+        min-width: 200px;
+    }
+}
+
+.horaire {
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+}
+@media screen and (max-width:960px){
+    .horaire {
+    width: 100%;
+    }
+}
+
+
+.imageHoraire {
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+.horaireP {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:960px){
+    .imageHoraire {
+    width: 100%;
+    }
+}
+@media screen and (max-width:480px){
+    .imageHoraire img {
+    width: 100%;
+    }
+}
+
+
+/* CARROUSSEL */
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+} 
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+} 
+.carousel-caption {
+    text-shadow: 0 1px 4px rgba(0,0,0,.9);
+  font-size:17px
+}
+.carousel-caption h3 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+    
+.carousel-inner,
+.carousel-inner .item {
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.carousel {
+    width: 960px;
+    min-width: 258px;
+    margin: 24px auto 0 auto;
+}
+
+.item:nth-child(1) {
+    background-image: url(../images/ferme/gallerie1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.item:nth-child(2) {
+    background-image: url(../images/ferme/gallerie2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.item:nth-child(3) {
+    background-image: url(../images/ferme/gallerie3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+button {
+    background-color: #BC8B4F;
+}
+button p {
+    color: #fff;
+    font-family: Lato;
+}
+
+/* Pour tablette >= 480 px et <= 960 px */
+
+@media screen and (max-width:960px){
+    .carousel {
+    width: 100%;
+    }
+}

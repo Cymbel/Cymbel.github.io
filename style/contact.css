@@ -1,0 +1,143 @@
+* {
+	margin: 0px ;
+	padding: 0px ;
+}
+p {
+    font-family: Lato;
+}
+
+.wrapperEntete {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* MAIN CONNEXION */
+
+h1 {
+    color: #BC8B4F;
+    font-size: 26px;
+    margin: 24px 0 24px 24px;
+    font-family: Lato;
+}
+
+.wrapperEntete h2 {
+   color: #BC8B4F;
+    font-size: 20px;
+    margin: 48px 0 24px 24px;
+    font-family: Lato;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+label {
+    display: inline-block;
+    width: 210px;
+    text-align: right;
+    margin-right: 48px;
+    font-family: Lato;
+    font-size: 16px;
+}
+input {
+    width: 300px;
+}
+#submit {
+    width: 150px;
+    margin : 10px 0 0 auto;
+    background: #BC8B4F;
+    font-family: Lato;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+}
+
+.submitDiv {
+    text-align: right;
+    width: 760px;
+    height: 36px;
+    line-height: 36px;
+    
+}
+textarea {
+    width: 300px;
+    height: 150px;
+    resize:none;
+}
+
+label {
+    vertical-align: top;
+}
+
+@media screen and (max-width:960px){
+    .wrapperEntete {
+        width: 100%;
+    }
+    .submitDiv {
+        width: 80%;
+    }
+}
+@media screen and (max-width:480px){
+    input {
+        width: 90%;
+        margin: 0 5%;
+    }  
+    textarea {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .submitDiv {
+   text-align: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:578px){
+    label {
+        display: inline-block;
+        width: 210px;
+        text-align: left;
+    }
+}
+
+.wrapperEntete p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 24px;
+    
+}
+
+#carte {
+    display: inline-block;
+    width: 47.5%;
+    margin-right: 24px;
+}
+#adresse {
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+    margin-left: 24px;
+}
+
+iframe {
+    margin-top: 10px;
+}
+
+@media screen and (max-width:960px){
+    #adresse {
+    display: inline-block;
+    width: 40%;
+    }
+}
+@media screen and (max-width:960px){
+    #carte {
+    display: block;
+    width: 100%;
+    margin-right: 24px;
+    }
+    #adresse {
+    display: inline-block;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+}

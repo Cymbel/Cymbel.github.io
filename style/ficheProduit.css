@@ -1,0 +1,273 @@
+* {
+	margin: 0px ;
+	padding: 0px ;
+}
+p,
+li {
+    font-family: Lato;
+    font-size: 16px;
+}
+
+.wrapperEntete {
+    width: 960px;
+    margin: 0 auto;
+}
+@media screen and (max-width:960px){
+    .wrapperEntete {
+        width: 100%;
+    }
+}
+
+/* MAIN CONNEXION */
+
+.wrapperEntete h1 {
+    color: #BC8B4F;
+    font-size: 26px;
+    margin: 0 0 24px 24px;
+    font-family: Lato;
+}
+
+@media screen and (max-width:600px){
+    .wrapperEntete h1 {
+        margin: 0 0 24px 0;
+        text-align: center;
+    }
+}
+
+.wrapperEntete h2 {
+   color: #BC8B4F;
+    font-size: 20px;
+    margin: 24px 0 24px 24px;
+    font-family: Lato; 
+}
+
+.wrapperEntete li {
+    margin: 0 0 10px 68px;
+}
+.wrapperEntete ul {
+    margin: 48px 0 48px 0;
+}
+
+.wrapperEntete p {
+    margin-left: 24px;
+}
+
+
+#photoProduit {
+    display: inline-block;
+    width: 224px;
+    margin: 0 0 0 100px;
+}
+#cotePhoto {
+    display: inline-block;
+    vertical-align: top;
+    width: 463px;
+    margin: 20px 24px 24px 100px;
+}
+
+@media screen and (max-width:960px){
+    #cotePhoto {
+        margin: 20px auto 24px auto;
+        display: block;
+        width: 463px;
+        }
+    #photoProduit {
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    #photoProduit img  {
+    width: 224px;
+    height: 299px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+}
+@media screen and (max-width:470px){
+    #cotePhoto {
+        margin: 20px auto 24px auto;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+#panier > :hover div {
+    background-color: #ceab81;
+}
+#panier {
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+#panier >a > div > p {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 0;
+}
+#panier > a > div {
+    background-color: #BC8B4F;
+    height: 36px;
+    line-height: 36px;
+}
+#panier :hover a {
+    color: #ceab81;
+}
+
+#ligne1 p,
+#ligne2 p{
+    display: inline-block;
+    width: 200px;
+    margin-left: 0;
+}
+
+#ligne1 {
+    margin: 24px 0 10px 48px;
+}
+#ligne2 {
+    margin: 0 0 0 48px;
+}
+#partage {
+    text-align: right;
+    margin: 48px 142px 0 0;
+}
+#partage img {
+    width: 15px;
+    height: 17px;
+    margin: 0 5px 0 5px;
+}
+@media screen and (max-width:960px){
+   #partage {
+        text-align: right;
+        margin: 48px 7px 0 0;
+    }
+    #ligne1 {
+    margin: 24px 0 0 48px;
+}
+}
+@media screen and (max-width:480px){
+   #partage p {
+    width: 100%;
+       text-align: center;
+       margin: 48px 7px 0 0;
+}
+}
+
+/* PRODUITS */
+
+.produit {
+    width:317.3px;
+    padding:0 24px 48px 24px;
+    display: inline-block;
+    text-align: center;
+}
+
+.produit a {
+    text-decoration: none;
+}
+
+.produit > div {
+    background-color: #BC8B4F;
+    height: 36px;
+    line-height: 36px;
+}
+.produit > :hover div {
+    background-color: #ceab81;
+}
+.produit >a > div > p {
+    color: #fff;
+    font-size: 18px;
+    
+}
+.produit img {
+    width: 224px;
+    height: 299px;
+}
+.produit > a > div {
+    background-color: #BC8B4F;
+    height: 36px;
+    line-height: 36px;
+}
+.produit :hover a {
+    color: #ceab81;
+}
+.produit p {
+    margin-left: 0;
+}
+/* Pour tablette >= 480 px et <= 960 px */
+
+@media screen and (max-width:960px){
+   .produit {
+        width:32%;
+        min-width: 150px;
+       padding:0 5px 48px 5px;   
+    }
+    .produit img {
+        width: 82.96296296%;
+        height: 100%;
+        min-width: 150px;
+        padding:0 5px 48px 5px;
+    }
+}
+
+@media screen and (max-width:480px){
+   .produit {
+       width:100%;
+       max-width: 287px;
+       display: block;
+       margin: 0 auto;
+    }
+}
+
+.thumbnail {
+  max-width: 100%;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+    margin: 0 auto;
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: 2%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+input {
+    display: inline-block;
+    width: 60px;
+}
+
+#cotePhoto li {
+    list-style-type: none;
+}
+
+#stock {
+    color : #02534D;
+}
